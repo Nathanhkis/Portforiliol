@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 100px auto 100px;
+  width: 100%;
+
+  background-color: #2196F3;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+
+.grid-menu {
+  padding-left: 0px;
+  padding-right: 0px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.grid-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grid-main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+.grid-footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.mainDiv {
+  display: none;
+}
+
+.menu-item {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  
+}
+
+.menu-button-background {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #4CAF50;
+  width: 80%;
+  height: 40%;
+  top: 10%;
+  left: 10%;
+  overflow: clip;
+  margin-bottom: 8px;
+  
+}
+
+.menu-button-background.selected {
+  
+  background-color: rgb (76,175,80);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 90%;
+  border-right: 0px;
+}
+
+.menuButtonSmall {
+  cursor: pointer;
+  display: none;
+  margin-left: 10px;
+  font-size: 12px;
+  background-color: rgb (96,195,100);
+  
+}
+
+.menuButtonSmall.selected {
+  display:block;
+}
+.grid-menu h3 {
+  margin: 0px;
+}
